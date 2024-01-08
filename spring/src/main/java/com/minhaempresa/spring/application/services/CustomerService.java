@@ -4,12 +4,12 @@ import com.minhaempresa.spring.application.services.exceptions.DatabaseException
 import com.minhaempresa.spring.application.services.exceptions.ResourceNotFoundException;
 import com.minhaempresa.spring.infrastructure.models.Customer;
 import com.minhaempresa.spring.infrastructure.repositories.CustomerRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
