@@ -32,7 +32,7 @@ public class TestConfig implements CommandLineRunner {
         Pizza pizza3 = new Pizza("Frango com Catupiry", 50.00);
         pizzaRepository.saveAll(Arrays.asList(pizza, pizza2, pizza3));
 
-        Customer customer = new Customer("11999999999", "Marcos", "Av. Paulista, 1578");
+        Customer customer = new Customer("11999999999", "Hermes", "Av. Paulista, 9999");
         customerRepository.save(customer);
 
         Request request = new Request(LocalDateTime.now(ZoneId.of("UTC")), 2, pizza.getPrice(), pizza, customer);
