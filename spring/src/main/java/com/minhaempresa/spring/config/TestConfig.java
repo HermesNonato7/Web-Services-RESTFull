@@ -26,7 +26,7 @@ public class TestConfig implements CommandLineRunner {
     private RequestRepository requestRepository;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) throws Exception { // Dados para os testes
         Pizza pizza = new Pizza("Muzzarela", 30.50);
         Pizza pizza2 = new Pizza("Calabreza", 25.89);
         Pizza pizza3 = new Pizza("Frango com Catupiry", 50.00);
